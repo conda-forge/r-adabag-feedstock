@@ -1,4 +1,4 @@
-{% set version = "4.3" %}
+{% set version = "5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/adabag_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/adabag/adabag_{{ version }}.tar.gz
-  sha256: 33d62f96e92224ee37cf7276749d214723c70b56704ebe2e2303edc541a18cec
+  sha256: 68d56ec46840b262557a45b4c1850a9683a185bd712aa14f48ec95f84455bb28
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
